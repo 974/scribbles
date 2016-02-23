@@ -1,0 +1,11 @@
+p
+  strong
+    | Title:
+  = @scribble.title
+p
+  strong
+    | Text:
+  = @scribble.content
+= link_to 'Edit', edit_scribble_path(@scribble)
+|  | 
+= link_to 'Back', scribbles_path

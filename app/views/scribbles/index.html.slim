@@ -1,0 +1,21 @@
+h1 All the Scribbles
+table
+  tr
+    th
+      | Title
+    th
+      | Content
+    th[colspan="2"]
+  - @scribbles.each do |scribble|
+    tr
+      td
+        = scribble.title
+      td
+        = scribble.content
+      td
+        = link_to 'Experience', scribble_path(scribble)
+      td
+        = link_to 'Tweak', edit_scribble_path(scribble)
+      td
+        = link_to 'Whiteout', scribble_path(scribble), method: :delete, data: { confirm: 'Whiteout this scribble?' }
+= link_to 'Post a scribble', new_scribble_path 
