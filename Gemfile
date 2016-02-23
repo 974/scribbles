@@ -13,7 +13,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'mongoid', '~> 5.1.0'
-gem "slim-rails"
+gem 'slim-rails'
+gem 'kramdown'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
